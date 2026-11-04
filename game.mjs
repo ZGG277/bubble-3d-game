@@ -1,6 +1,8 @@
+import{Scenery}from'./scenery.mjs';
 import{Bubble3D}from'./bubble3d.mjs';
 import{Game,Input,W,H,SAFE_R,MAX_R,MIN_R,bird,RIM,POST,rimPoints}from'./core.mjs';
 const skyImage=new Image();skyImage.src='sky.webp';const rewardImage=new Image();rewardImage.src='rainbow.svg';
+const scenery=new Scenery(skyImage);
 const $=s=>document.querySelector(s),c=$('#game'),ctx=c.getContext('2d'),g=new Game(),input=new Input(g);let bubbleMesh=null,meshError='',frameDt=0,meshImpulse=0,best=0,particles=[],coinFlights=[],ringFlights=[],boostGlow=0,last=0,paused=false,shown=false,audio=null,stream=null,analyser=null,micToken=0,micSamples=null,micQuiet=0,keyFan=false,previousPhase='ready',windTipUntil=0,birdTipUntil=0,birdTipShown=false,popElapsed=0,popX=0,popY=0,popRadius=0;
 try{bubbleMesh=new Bubble3D(document.querySelector('#bubble3d'),{onStatus:({status})=>{if(status==='context-lost'){paused=true;cancelInput();$('#paused').hidden=false;meshError='3D 图形暂时中断，恢复后可继续。'}else if(status==='ready'){meshError=''}}})}catch(e){meshError='此设备暂时无法启动 WebGL 3D 泡泡，请换支持 WebGL 的浏览器。';document.querySelector('#hint').textContent=meshError}
 try{best=Math.max(0,Number(localStorage.getItem('bubble-webgl-experiment-best'))||0)}catch{}$('#best').textContent=best.toFixed(1);
@@ -29,7 +31,7 @@ function pop(){shown=true;popElapsed=0;popX=g.x;popY=g.y-g.camera;popRadius=g.r;
 
 function celebrate(e){if(g.coins>best){best=g.coins;try{localStorage.setItem('bubble-webgl-experiment-best',String(best))}catch{}}tone(950,.22);meshImpulse=e.impulse||0;boostGlow=1;ringFlights.push({x:e.x,y:e.y,half:e.half,age:0});coinFlights.push({x:e.x,y:e.y-g.camera,age:0})}
 function ellipse(x,y,rx,ry,color){ctx.beginPath();ctx.ellipse(x,y,rx,ry,0,0,Math.PI*2);ctx.fillStyle=color;ctx.fill()}
-function draw(){const t=g.time;const bg=ctx.createLinearGradient(0,0,0,H);bg.addColorStop(0,'#9bc6df');bg.addColorStop(.52,'#c4dcec');bg.addColorStop(1,'#f5efe0');ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);if((skyImage.complete||skyImage.width)&&(skyImage.naturalWidth||skyImage.width)){ctx.drawImage(skyImage,0,0,W,H)}
+function draw(){const t=g.time;scenery.draw(ctx,g.camera);
  // Sunlight is atmospheric and never obscures collision edges.
  let sun=ctx.createRadialGradient(15,25,2,15,25,220);sun.addColorStop(0,'rgba(255,255,245,.48)');sun.addColorStop(1,'rgba(255,255,255,0)');ctx.fillStyle=sun;ctx.fillRect(0,0,W,250);
  const floating=g.phase==='float';
@@ -63,3 +65,4 @@ function draw(){const t=g.time;const bg=ctx.createLinearGradient(0,0,0,H);bg.add
  $('#score').textContent=String(g.coins);$('#best').textContent=String(best);$('#height').textContent=Math.floor(g.height)+' m';$('#readout').textContent=g.phase==='float'&&g.time<birdTipUntil?'松开或吹风，调整速度躲避小鸟':g.phase==='float'&&g.time<windTipUntil?'按住底部吹风':'';
 }
 function frame(now){let dt=last?Math.min((now-last)/1000,.1):0;last=now;frameDt=(!paused&&!document.hidden&&!$('#panel').open)?dt:0;if(!paused&&!document.hidden&&!$('#panel').open){boostGlow=Math.max(0,boostGlow-dt*.65);micStep(dt);g.step(dt,input.fan||keyFan);if(previousPhase!=='float'&&g.phase==='float')windTipUntil=g.time+3;if(g.phase==='float'&&!birdTipShown&&g.gates.some(q=>q.id>=4&&q.id%3===1&&q.y-140-g.camera>-30&&q.y-140-g.camera<H*.55)){birdTipShown=true;birdTipUntil=g.time+3.5}previousPhase=g.phase;for(const e of g.events.splice(0))celebrate(e);for(const f of ringFlights)f.age+=dt;ringFlights=ringFlights.filter(f=>f.age<.65);for(const f of coinFlights)f.age+=dt;coinFlights=coinFlights.filter(f=>f.age<.7);if(g.phase==='pop'&&!shown)pop();if(g.phase==='pop'&&shown){popElapsed+=dt;if(popElapsed>=.85)$('#result').hidden=false}for(const p of particles){p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=70*dt;p.life-=dt}particles=particles.filter(p=>p.life>0)}draw();requestAnimationFrame(frame)}resize();requestAnimationFrame(frame);
+
