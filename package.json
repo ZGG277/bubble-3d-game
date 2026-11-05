@@ -1,0 +1,12 @@
+{
+  "name": "bubble-up-up-away",
+  "version": "1.0.3",
+  "private": true,
+  "description": "Bubble game release source and regression checks",
+  "scripts": {
+    "test": "node tests/gameplay.cjs && node tests/platform.cjs && node tests/ambience.cjs"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.100"
+  }
+}

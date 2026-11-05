@@ -1,0 +1,96 @@
+{
+  "version": "1.0.3",
+  "source": "Published minitool 1.0.3 with web-only texture compression",
+  "publishedPackageSha256": "46bda30ba4a555cf85fe59a05161ccecf0aae2f68784408c4a4064900b784be5",
+  "baseCommit": "7dcccef2051a592da8494884a002cbb90d445caf",
+  "files": [
+    {
+      "path": "ambience.js",
+      "bytes": 4698,
+      "sha256": "10525f8174ff7e5fec57233cabf0620ac790dfed5cc05667ba40fb8ff13dd44d"
+    },
+    {
+      "path": "bird-credits.json",
+      "bytes": 1361,
+      "sha256": "4e24a8405239ed912a472478bebeeda3416376aa9a3294c7d3f165b1d4ff879c"
+    },
+    {
+      "path": "bird-samples.js",
+      "bytes": 494215,
+      "sha256": "65d4104ee437d0a04ff08f893a484cad70323eb65c93b4c5d6b4a1474551cff5"
+    },
+    {
+      "path": "bubble3d.js",
+      "bytes": 20061,
+      "sha256": "760c5d6a7b0851ba1f083f90485597cf9a2316ab10d1927557141b299a3b655b"
+    },
+    {
+      "path": "cloud.png",
+      "bytes": 6177,
+      "sha256": "9c20a5db667b600ab789767cdc91004badbff30e1380af1ca3c456806bd3e35a"
+    },
+    {
+      "path": "core.js",
+      "bytes": 5778,
+      "sha256": "ee2dbc01dd756084144f6e8321bc3f2aac2d99c3adb6dcc6b8f5e0e508eba549"
+    },
+    {
+      "path": "game.js",
+      "bytes": 19138,
+      "sha256": "2d377d154bad954b8c4590c5a2086737b4b5d98e677c7ac3d019e8fa826ba854"
+    },
+    {
+      "path": "index.html",
+      "bytes": 2824,
+      "sha256": "0b0519da9996481b895f90afd4bc56a89548b5202869114c2ba50f1dbed26297"
+    },
+    {
+      "path": "mini_tool.json",
+      "bytes": 36,
+      "sha256": "70c36181858716b53390f76eb8a7b48026ce19d1025485eef62e96a0727a43a6"
+    },
+    {
+      "path": "plate.png",
+      "bytes": 502093,
+      "sha256": "e33a62ccce1f337a00c5efc8b7150c24acac10fdd4b2a88d1675c05d5effc578"
+    },
+    {
+      "path": "platform.js",
+      "bytes": 2093,
+      "sha256": "f14d865e8ee32e752ca14e0ba5a75c635d101e92f875d042f287d3f3c3e94fee"
+    },
+    {
+      "path": "rainbow.svg",
+      "bytes": 722,
+      "sha256": "577c7d63473491106e153213e59afc5182c935e1cfd36d1c7b34271d6c1825b5"
+    },
+    {
+      "path": "scenery.js",
+      "bytes": 2040,
+      "sha256": "4a185c7506a26b242707b92153de31831e935d80e6ffdbdd054358eb6c012368"
+    },
+    {
+      "path": "share-hero.jpg",
+      "bytes": 157722,
+      "sha256": "06a2e2f048338c017f06d243ee0bf7783a5dc159f6cb50ce42fade30b68ed94f"
+    },
+    {
+      "path": "style.css",
+      "bytes": 7707,
+      "sha256": "3a267e04ed2d00851635400444541300c465a8a83e9f134f1bfd26f1f121e59f"
+    },
+    {
+      "path": "tile.webp",
+      "bytes": 175082,
+      "sha256": "940bd1d8964c11e6a5da0a183e8b2eefc093612e9760eda0ea06e31650cb3d46"
+    }
+  ],
+  "webAdaptation": {
+    "original": "tile.png",
+    "originalSha256": "a4858e8f9ac757e5344e05fc13121e50c203a04383a4ee1539332b9859857f28",
+    "replacement": "tile.webp",
+    "encoding": "WebP quality 98, 390x1560",
+    "changedCode": "scenery.js asset path only",
+    "gameplayChanged": false
+  }
+}
