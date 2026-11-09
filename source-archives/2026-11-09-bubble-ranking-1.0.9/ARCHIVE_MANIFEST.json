@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "archivedOn": "2026-11-09",
+  "version": "1.0.9",
+  "releaseStatus": "source archive only; no publication, submission, merge or deployment",
+  "origin": "Recovered retained cloud source ZIP and independently retained runtime ZIP",
+  "originalLive103Recovered": null,
+  "sourceInput": {
+    "file": "bubble-ranking-1.0.9-source-and-tests.zip",
+    "bytes": 4870813,
+    "sha256": "d93e6f5aea56617a48e11529f7315513c056744f52105bb332f5717c0454618d"
+  },
+  "runtimeInput": {
+    "file": "bubble-ranking-1.0.9.zip",
+    "bytes": 1236406,
+    "sha256": "0b90597ef2dccfd73ed964b9bef05baff55e6ac8159b378e5ee896705dae9c14"
+  },
+  "verification": {
+    "rebuiltRuntimeZipByteEqual": true,
+    "commands": [
+      "npm run build",
+      "npm test"
+    ],
+    "passedChecks": {
+      "base": 70
+    },
+    "dependenciesUsed": {
+      "@napi-rs/canvas": "0.1.100"
+    },
+    "limitations": [
+      "No new browser or real device validation",
+      "Offline and mocked tests are not live platform acceptance",
+      "No live leaderboard or native sharing acceptance"
+    ],
+    "whitespaceCheck": {
+      "status": "warnings preserved from original source; no code reformatted",
+      "warnings": [
+        "baseline-1.0.5/index.html and candidate/index.html: existing blank line at EOF"
+      ]
+    }
+  },
+  "sourceComparison": {
+    "unchangedFromSourceZip": [
+      "SOURCE_NOTES.md",
+      "baseline-1.0.5/MANIFEST.json",
+      "baseline-1.0.5/ambience.js",
+      "baseline-1.0.5/bird-credits.json",
+      "baseline-1.0.5/bird-samples.js",
+      "baseline-1.0.5/bubble3d.js",
+      "baseline-1.0.5/cloud.png",
+      "baseline-1.0.5/core.js",
+      "baseline-1.0.5/game.js",
+      "baseline-1.0.5/index.html",
+      "baseline-1.0.5/mini_tool.json",
+      "baseline-1.0.5/plate.png",
+      "baseline-1.0.5/platform.js",
+      "baseline-1.0.5/rainbow.svg",
+      "baseline-1.0.5/scenery.js",
+      "baseline-1.0.5/share-hero.jpg",
+      "baseline-1.0.5/style.css",
+      "baseline-1.0.5/tile.webp",
+      "candidate/MANIFEST.json",
+      "candidate/ambience.js",
+      "candidate/bird-credits.json",
+      "candidate/bird-samples.js",
+      "candidate/bubble3d.js",
+      "candidate/cloud.png",
+      "candidate/core.js",
+      "candidate/game.js",
+      "candidate/index.html",
+      "candidate/mini_tool.json",
+      "candidate/plate.png",
+      "candidate/platform.js",
+      "candidate/rainbow.svg",
+      "candidate/ranking-ui.js",
+      "candidate/ranking.js",
+      "candidate/scenery.js",
+      "candidate/share-hero.jpg",
+      "candidate/style.css",
+      "candidate/tile.webp",
+      "core.mjs",
+      "tests/ambience.cjs",
+      "tests/gameplay.cjs",
+      "tests/layout.cjs",
+      "tests/platform.cjs",
+      "tests/ranking-dom.cjs",
+      "tests/ranking.cjs"
+    ],
+    "modifiedFromSourceZip": [
+      "README.md",
+      "package.py"
+    ],
+    "addedArchiveSupport": [
+      ".gitignore",
+      "package.json"
+    ]
+  },
+  "omitted": [
+    "Publishing and account/session records",
+    "Preview QR codes",
+    "Generated current build artifacts and duplicate ZIPs",
+    "Generated screenshots and private workspace metadata",
+    "node_modules and caches"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 63,
+      "sha256": "ab38bc01af3daa21fe99e8ac8111ae88099d2ddcc73ad95e681d8a293b5937e0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1855,
+      "sha256": "ce56f74b5eb60781017124d6187471fb7f731907c05d3971eef62b870fce6fd0"
+    },
+    {
+      "path": "SOURCE_NOTES.md",
+      "bytes": 2487,
+      "sha256": "cf51700258f9cbeeab6907edb8e30174c1d9069aa15453c31a64acb3d24d4210"
+    },
+    {
+      "path": "baseline-1.0.5/MANIFEST.json",
+      "bytes": 2744,
+      "sha256": "b4ded537191aa5e6e45aa775228476bc7ef0d9fe710e12b24c33f2b260f564f8"
+    },
+    {
+      "path": "baseline-1.0.5/ambience.js",
+      "bytes": 4698,
+      "sha256": "10525f8174ff7e5fec57233cabf0620ac790dfed5cc05667ba40fb8ff13dd44d"
+    },
+    {
+      "path": "baseline-1.0.5/bird-credits.json",
+      "bytes": 1361,
+      "sha256": "4e24a8405239ed912a472478bebeeda3416376aa9a3294c7d3f165b1d4ff879c"
+    },
+    {
+      "path": "baseline-1.0.5/bird-samples.js",
+      "bytes": 494215,
+      "sha256": "65d4104ee437d0a04ff08f893a484cad70323eb65c93b4c5d6b4a1474551cff5"
+    },
+    {
+      "path": "baseline-1.0.5/bubble3d.js",
+      "bytes": 20061,
+      "sha256": "760c5d6a7b0851ba1f083f90485597cf9a2316ab10d1927557141b299a3b655b"
+    },
+    {
+      "path": "baseline-1.0.5/cloud.png",
+      "bytes": 6177,
+      "sha256": "9c20a5db667b600ab789767cdc91004badbff30e1380af1ca3c456806bd3e35a"
+    },
+    {
+      "path": "baseline-1.0.5/core.js",
+      "bytes": 5778,
+      "sha256": "ee2dbc01dd756084144f6e8321bc3f2aac2d99c3adb6dcc6b8f5e0e508eba549"
+    },
+    {
+      "path": "baseline-1.0.5/game.js",
+      "bytes": 21285,
+      "sha256": "99d4a9d48c2101072d77063909797995dc35e721a7ec1b024b7cc868cec1d656"
+    },
+    {
+      "path": "baseline-1.0.5/index.html",
+      "bytes": 2824,
+      "sha256": "0b0519da9996481b895f90afd4bc56a89548b5202869114c2ba50f1dbed26297"
+    },
+    {
+      "path": "baseline-1.0.5/mini_tool.json",
+      "bytes": 36,
+      "sha256": "70c36181858716b53390f76eb8a7b48026ce19d1025485eef62e96a0727a43a6"
+    },
+    {
+      "path": "baseline-1.0.5/plate.png",
+      "bytes": 502093,
+      "sha256": "e33a62ccce1f337a00c5efc8b7150c24acac10fdd4b2a88d1675c05d5effc578"
+    },
+    {
+      "path": "baseline-1.0.5/platform.js",
+      "bytes": 2093,
+      "sha256": "f14d865e8ee32e752ca14e0ba5a75c635d101e92f875d042f287d3f3c3e94fee"
+    },
+    {
+      "path": "baseline-1.0.5/rainbow.svg",
+      "bytes": 722,
+      "sha256": "577c7d63473491106e153213e59afc5182c935e1cfd36d1c7b34271d6c1825b5"
+    },
+    {
+      "path": "baseline-1.0.5/scenery.js",
+      "bytes": 2040,
+      "sha256": "4a185c7506a26b242707b92153de31831e935d80e6ffdbdd054358eb6c012368"
+    },
+    {
+      "path": "baseline-1.0.5/share-hero.jpg",
+      "bytes": 157722,
+      "sha256": "06a2e2f048338c017f06d243ee0bf7783a5dc159f6cb50ce42fade30b68ed94f"
+    },
+    {
+      "path": "baseline-1.0.5/style.css",
+      "bytes": 7707,
+      "sha256": "3a267e04ed2d00851635400444541300c465a8a83e9f134f1bfd26f1f121e59f"
+    },
+    {
+      "path": "baseline-1.0.5/tile.webp",
+      "bytes": 175082,
+      "sha256": "940bd1d8964c11e6a5da0a183e8b2eefc093612e9760eda0ea06e31650cb3d46"
+    },
+    {
+      "path": "candidate/MANIFEST.json",
+      "bytes": 3063,
+      "sha256": "5901ea452778d9f22eb4d4bdce02de6fe920ade73bd9a41d4d34c3235fe414c7"
+    },
+    {
+      "path": "candidate/ambience.js",
+      "bytes": 4698,
+      "sha256": "10525f8174ff7e5fec57233cabf0620ac790dfed5cc05667ba40fb8ff13dd44d"
+    },
+    {
+      "path": "candidate/bird-credits.json",
+      "bytes": 1361,
+      "sha256": "4e24a8405239ed912a472478bebeeda3416376aa9a3294c7d3f165b1d4ff879c"
+    },
+    {
+      "path": "candidate/bird-samples.js",
+      "bytes": 494215,
+      "sha256": "65d4104ee437d0a04ff08f893a484cad70323eb65c93b4c5d6b4a1474551cff5"
+    },
+    {
+      "path": "candidate/bubble3d.js",
+      "bytes": 20061,
+      "sha256": "760c5d6a7b0851ba1f083f90485597cf9a2316ab10d1927557141b299a3b655b"
+    },
+    {
+      "path": "candidate/cloud.png",
+      "bytes": 6177,
+      "sha256": "9c20a5db667b600ab789767cdc91004badbff30e1380af1ca3c456806bd3e35a"
+    },
+    {
+      "path": "candidate/core.js",
+      "bytes": 5778,
+      "sha256": "ee2dbc01dd756084144f6e8321bc3f2aac2d99c3adb6dcc6b8f5e0e508eba549"
+    },
+    {
+      "path": "candidate/game.js",
+      "bytes": 21603,
+      "sha256": "091a01d4a7a4ea6344bce59552c906de2094ce2b087f8474b2304ae066a50d53"
+    },
+    {
+      "path": "candidate/index.html",
+      "bytes": 4861,
+      "sha256": "545c33061d54f3dbf70dd1a4e3a4bcd976345f9245b93f04899c35193d05bc94"
+    },
+    {
+      "path": "candidate/mini_tool.json",
+      "bytes": 36,
+      "sha256": "70c36181858716b53390f76eb8a7b48026ce19d1025485eef62e96a0727a43a6"
+    },
+    {
+      "path": "candidate/plate.png",
+      "bytes": 502093,
+      "sha256": "e33a62ccce1f337a00c5efc8b7150c24acac10fdd4b2a88d1675c05d5effc578"
+    },
+    {
+      "path": "candidate/platform.js",
+      "bytes": 3631,
+      "sha256": "ce58247fb189bc168f209afd5e65715c1731887db1b98a74ce80b5190aff4c0c"
+    },
+    {
+      "path": "candidate/rainbow.svg",
+      "bytes": 722,
+      "sha256": "577c7d63473491106e153213e59afc5182c935e1cfd36d1c7b34271d6c1825b5"
+    },
+    {
+      "path": "candidate/ranking-ui.js",
+      "bytes": 6565,
+      "sha256": "8632d7a99e3287225ac2360aef804328ed3988d039889306c1d167ddcafa5848"
+    },
+    {
+      "path": "candidate/ranking.js",
+      "bytes": 7291,
+      "sha256": "e8cbf7d74fb8d7e0740215e999bab21e48be077db2e73a811e8fb71e335b3f99"
+    },
+    {
+      "path": "candidate/scenery.js",
+      "bytes": 2040,
+      "sha256": "4a185c7506a26b242707b92153de31831e935d80e6ffdbdd054358eb6c012368"
+    },
+    {
+      "path": "candidate/share-hero.jpg",
+      "bytes": 157722,
+      "sha256": "06a2e2f048338c017f06d243ee0bf7783a5dc159f6cb50ce42fade30b68ed94f"
+    },
+    {
+      "path": "candidate/style.css",
+      "bytes": 12568,
+      "sha256": "ff370a7bfb183be113715747af8b236d5edcc1af44a310473a0347e40cf23f78"
+    },
+    {
+      "path": "candidate/tile.webp",
+      "bytes": 175082,
+      "sha256": "940bd1d8964c11e6a5da0a183e8b2eefc093612e9760eda0ea06e31650cb3d46"
+    },
+    {
+      "path": "core.mjs",
+      "bytes": 5698,
+      "sha256": "c19dfb4e2059932dd2d6b400c83c4a3056ed83b0de1082a2f2501e2b302b4469"
+    },
+    {
+      "path": "package.json",
+      "bytes": 376,
+      "sha256": "21ac33e6371312f6c6f7674acd71118a19928319d55b76e189299d800102fd67"
+    },
+    {
+      "path": "package.py",
+      "bytes": 3939,
+      "sha256": "a6d150f5e2b746afe051e75319d0ff39dccbd6a724bd7c4d8177b0a5663bef15"
+    },
+    {
+      "path": "tests/ambience.cjs",
+      "bytes": 2772,
+      "sha256": "359ff64a2909ae4bd5cfa42433d346fee80fe12302ce8713ec5aaea3f4e214dd"
+    },
+    {
+      "path": "tests/gameplay.cjs",
+      "bytes": 11283,
+      "sha256": "baa06de3cd3016a88078cf4dca2461a21fffff82c2ff3fb4c5531e79a0a0293c"
+    },
+    {
+      "path": "tests/layout.cjs",
+      "bytes": 3902,
+      "sha256": "159c158d9e2363afe5e477dbbb023935f64fdec2566ebf1f3463577fb623776f"
+    },
+    {
+      "path": "tests/platform.cjs",
+      "bytes": 1659,
+      "sha256": "7351a1bd9eda86ae96aa918bff74838e0cc1f7972295a59a5faacd768c9b411d"
+    },
+    {
+      "path": "tests/ranking-dom.cjs",
+      "bytes": 7657,
+      "sha256": "a11d29f8ada3fd00735ffcc80b0696d5c4ff8a8e9d7922783185e5f8c9f4f671"
+    },
+    {
+      "path": "tests/ranking.cjs",
+      "bytes": 9837,
+      "sha256": "3c86b4657879bb7a52eb3d686df260458508973bd5f059c79960fa9d73fd123b"
+    }
+  ]
+}

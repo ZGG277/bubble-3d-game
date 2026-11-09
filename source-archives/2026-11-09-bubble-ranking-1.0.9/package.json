@@ -1,0 +1,12 @@
+{
+  "name": "bubble-ranking-source-archive",
+  "version": "1.0.9",
+  "private": true,
+  "scripts": {
+    "build": "python3 package.py",
+    "test": "node tests/ambience.cjs && node tests/gameplay.cjs && node tests/layout.cjs && node tests/platform.cjs && node tests/ranking-dom.cjs && node tests/ranking.cjs"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.100"
+  }
+}

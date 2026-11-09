@@ -1,0 +1,7 @@
+node_modules/
+reports/
+*.zip
+.env*
+records/
+publish/
+.DS_Store

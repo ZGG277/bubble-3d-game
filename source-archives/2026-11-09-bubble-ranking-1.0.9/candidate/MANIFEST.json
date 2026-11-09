@@ -1,0 +1,108 @@
+{
+  "version": "1.0.9",
+  "baseVersion": "1.0.5",
+  "baseZipSha256": "ff029afd90ef1d8deccae92ffecfe57b30edf90c2af519f7ddfd96d7344e7a6d",
+  "score": "Original cumulative flight distance g.height, raw number in metres; not vertical altitude.",
+  "changedRuntimeFiles": [
+    "game.js",
+    "index.html",
+    "platform.js",
+    "style.css"
+  ],
+  "addedRuntimeFiles": [
+    "ranking-ui.js",
+    "ranking.js"
+  ],
+  "files": [
+    {
+      "path": "ambience.js",
+      "bytes": 4698,
+      "sha256": "10525f8174ff7e5fec57233cabf0620ac790dfed5cc05667ba40fb8ff13dd44d"
+    },
+    {
+      "path": "bird-credits.json",
+      "bytes": 1361,
+      "sha256": "4e24a8405239ed912a472478bebeeda3416376aa9a3294c7d3f165b1d4ff879c"
+    },
+    {
+      "path": "bird-samples.js",
+      "bytes": 494215,
+      "sha256": "65d4104ee437d0a04ff08f893a484cad70323eb65c93b4c5d6b4a1474551cff5"
+    },
+    {
+      "path": "bubble3d.js",
+      "bytes": 20061,
+      "sha256": "760c5d6a7b0851ba1f083f90485597cf9a2316ab10d1927557141b299a3b655b"
+    },
+    {
+      "path": "cloud.png",
+      "bytes": 6177,
+      "sha256": "9c20a5db667b600ab789767cdc91004badbff30e1380af1ca3c456806bd3e35a"
+    },
+    {
+      "path": "core.js",
+      "bytes": 5778,
+      "sha256": "ee2dbc01dd756084144f6e8321bc3f2aac2d99c3adb6dcc6b8f5e0e508eba549"
+    },
+    {
+      "path": "game.js",
+      "bytes": 21603,
+      "sha256": "091a01d4a7a4ea6344bce59552c906de2094ce2b087f8474b2304ae066a50d53"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4861,
+      "sha256": "545c33061d54f3dbf70dd1a4e3a4bcd976345f9245b93f04899c35193d05bc94"
+    },
+    {
+      "path": "mini_tool.json",
+      "bytes": 36,
+      "sha256": "70c36181858716b53390f76eb8a7b48026ce19d1025485eef62e96a0727a43a6"
+    },
+    {
+      "path": "plate.png",
+      "bytes": 502093,
+      "sha256": "e33a62ccce1f337a00c5efc8b7150c24acac10fdd4b2a88d1675c05d5effc578"
+    },
+    {
+      "path": "platform.js",
+      "bytes": 3631,
+      "sha256": "ce58247fb189bc168f209afd5e65715c1731887db1b98a74ce80b5190aff4c0c"
+    },
+    {
+      "path": "rainbow.svg",
+      "bytes": 722,
+      "sha256": "577c7d63473491106e153213e59afc5182c935e1cfd36d1c7b34271d6c1825b5"
+    },
+    {
+      "path": "ranking-ui.js",
+      "bytes": 6565,
+      "sha256": "8632d7a99e3287225ac2360aef804328ed3988d039889306c1d167ddcafa5848"
+    },
+    {
+      "path": "ranking.js",
+      "bytes": 7291,
+      "sha256": "e8cbf7d74fb8d7e0740215e999bab21e48be077db2e73a811e8fb71e335b3f99"
+    },
+    {
+      "path": "scenery.js",
+      "bytes": 2040,
+      "sha256": "4a185c7506a26b242707b92153de31831e935d80e6ffdbdd054358eb6c012368"
+    },
+    {
+      "path": "share-hero.jpg",
+      "bytes": 157722,
+      "sha256": "06a2e2f048338c017f06d243ee0bf7783a5dc159f6cb50ce42fade30b68ed94f"
+    },
+    {
+      "path": "style.css",
+      "bytes": 12568,
+      "sha256": "ff370a7bfb183be113715747af8b236d5edcc1af44a310473a0347e40cf23f78"
+    },
+    {
+      "path": "tile.webp",
+      "bytes": 175082,
+      "sha256": "940bd1d8964c11e6a5da0a183e8b2eefc093612e9760eda0ea06e31650cb3d46"
+    }
+  ]
+}
