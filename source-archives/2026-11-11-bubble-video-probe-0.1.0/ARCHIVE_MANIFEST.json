@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "archivedOn": "2026-11-11",
+  "description": "Independent 0.1.0 fixed-trace replay/MP4 capability diagnostic",
+  "origin": "Existing cloud project source directories, not a new official game release",
+  "sourceBaseCommit": "f0651410ede69684d37023459147ef91f0f4b1bb",
+  "sourceRuntimeChanged": false,
+  "deployment": "No main changes, merge, Pages configuration change or platform deployment",
+  "verification": {
+    "syntaxChecks": 2,
+    "mockScenariosPassed": 7,
+    "muxFrames": 240,
+    "width": 360,
+    "height": 640,
+    "fps": 24,
+    "seconds": 10,
+    "codec": "h264",
+    "fullDecodePassed": true,
+    "generatedFixtureReproductionPassed": true,
+    "nativePlatformTested": false
+  },
+  "excluded": [
+    "session files and account credentials",
+    "publish drafts and QR codes",
+    "private evidence and operation logs",
+    "image-generation prompts and unused artwork",
+    "generated screenshots, current build outputs, duplicate ZIPs and installed dependencies"
+  ],
+  "license": "No new license grant introduced; existing repository terms and asset provenance retained. No third-party vendor runtime code added.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 71,
+      "sha256": "73ed5b77e68582e20d505df955fcef35ab150376c065ae92f0d7c6574fc7d12f"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 861,
+      "sha256": "73aa5daa74becb8bbdc5e0934b2554960c5bf30b23b85a1c2cca0261ca505855"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1523,
+      "sha256": "4cbc16bee59e8058fc05367d9019ff77f0886c7f9b0c8eff5683ce81ef9a1a2c"
+    },
+    {
+      "path": "dist/app.js",
+      "bytes": 9643,
+      "sha256": "4f1357d2d14c70c7288879d0fb2790040e26575a05d1845cd1964cf160124527"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 1377,
+      "sha256": "e636beab1c6371ecd25d88d104fd54576e4db30979b5ac2fba4666a0aa2b02a1"
+    },
+    {
+      "path": "dist/mini_tool.json",
+      "bytes": 36,
+      "sha256": "70c36181858716b53390f76eb8a7b48026ce19d1025485eef62e96a0727a43a6"
+    },
+    {
+      "path": "dist/mux.js",
+      "bytes": 2753,
+      "sha256": "f7bfc8ec12c4716fa1668482d7c805a00203bf15b414159ad6cc9125f16c06f8"
+    },
+    {
+      "path": "dist/style.css",
+      "bytes": 1081,
+      "sha256": "11eb917ffb8692de1ab30d85082c538f517747e546a67158343763df9a1c04fa"
+    },
+    {
+      "path": "run_offline_tests.py",
+      "bytes": 1504,
+      "sha256": "40fe43f83a5d3ec11f8bcb07376ec74ab592263c352754c192821b49333ea1b1"
+    },
+    {
+      "path": "test-flow.cjs",
+      "bytes": 3929,
+      "sha256": "43daa35784a586adef43c99dc50c33e4e1b5479729ec6ed95ce3a8b2ff64d1c6"
+    },
+    {
+      "path": "test-mux.cjs",
+      "bytes": 1633,
+      "sha256": "9c3e42dacfb06b942889ccafda834012b3913ea01c35dde54f902d020e8ceb7b"
+    },
+    {
+      "path": "test.cjs",
+      "bytes": 2492,
+      "sha256": "ba0a9fb020789dd2c2c5950afb7ec02e1ad3fefc90b2574449f0f354f75fa8cc"
+    }
+  ]
+}
